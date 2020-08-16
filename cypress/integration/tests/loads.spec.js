@@ -18,7 +18,7 @@ import { title, subtitle } from '../mock-data/common/pages-elements';
 describe('Load GBH Pages', () => {
 	beforeEach(() => {
 		cy.clearLocalStorage();
-		cy.visit('https://gbh.com.do/');
+		cy.visit(Cypress.env('url'));
 	});
 
 	it('Loads Homepage', () => {

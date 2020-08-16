@@ -65,11 +65,14 @@ export function goToITNetwork() {
 }
 
 export function goToAboutUs() {
-	cy.get(mainMenu.whoWeAre.selector)
-		.nhover()
-		.get(mainMenu.whoWeAre.inside.aboutUs.selector)
-		.should('be.visible')
-		.click({ force: true });
+	cy.get(mainMenu.whoWeAre.selector).click({ force: true });
+	cy.get(mainMenu.whoWeAre.inside.aboutUs.selector).click({ force: true });
+
+	// cy.get(mainMenu.whoWeAre.selector)
+	// 	.nhover()
+	// 	.get(mainMenu.whoWeAre.inside.aboutUs.selector)
+	// 	.should('be.visible')
+	// 	.click({ force: true });
 
 	// .trigger('mouseover').click()
 
