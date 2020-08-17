@@ -5,7 +5,7 @@ export const title = {
     to simplify the imports from ../loads.spec.js*/
 	titles: {
 		Home:
-			'We transform businesses. Measuring our achievements by their impact.',
+			'We transform businesses. Measuring our achievements by their impact.',
 		aboutUs: 'We’re driven by an earnest belief',
 		agentOfChange: 'Staff Augmentation',
 		blog:
@@ -19,7 +19,7 @@ export const title = {
 			'You’re moving fast. We’ve got a board-level vCIO to get you there faster.',
 		itFoundation: 'IT Support',
 		itNetwork:
-			'From design to implementation and support. Full-Service Network Solutions that increase your business’ stability and security.',
+			'From design to implementation and support.Full-Service Network Solutions that increase your business’ stability and security.',
 		itProtection: 'IT Protection & Support',
 	},
 };

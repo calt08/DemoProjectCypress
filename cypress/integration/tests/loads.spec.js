@@ -11,6 +11,7 @@ import {
 	goToBlog,
 	goToCareers,
 	goToCaseStudies,
+	goToITProtection,
 } from '../actions/go-to-actions';
 import { title as aboutUsTitle } from '../mock-data/about-us';
 import { title, subtitle } from '../mock-data/common/pages-elements';
@@ -22,7 +23,11 @@ describe('Load GBH Pages', () => {
 	});
 
 	it('Loads Homepage', () => {
-		cy.get(title.selector).should('have.text', title.titles.Home);
+		// cy.get(title.selector).should('have.text', title.titles.Home);
+		cy.get(title.selector).should(($div) => {
+			// console.log($div.text());
+			expect($div.text().trim()).equal(title.titles.Home);
+		});
 	});
 
 	it('Loads Innovation Squad', () => {
@@ -50,6 +55,11 @@ describe('Load GBH Pages', () => {
 		cy.get(title.selector).should('have.text', title.titles.itFoundation);
 	});
 
+	it('Loads IT Protection', () => {
+		goToITProtection();
+		cy.get(title.selector).should('have.text', title.titles.itProtection);
+	});
+
 	it('Loads Compare products', () => {
 		goToCompareProducts();
 		cy.get(title.selector).should('have.text', title.titles.compareProducts);
@@ -57,7 +67,11 @@ describe('Load GBH Pages', () => {
 
 	it('Loads IT Network Solutions', () => {
 		goToITNetwork();
-		cy.get(title.selector).should('have.text', title.titles.itNetwork);
+		// cy.get(title.selector).should('have.text', title.titles.itNetwork);
+		cy.get(title.selector).should(($div) => {
+			// console.log($div.text());
+			expect($div.text().trim()).equal(title.titles.itNetwork);
+		});
 	});
 
 	it('Loads About us', () => {
