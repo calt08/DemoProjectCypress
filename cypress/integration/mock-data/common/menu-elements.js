@@ -52,7 +52,7 @@ const whoWeAre = {
 			text: 'About us',
 		},
 		pointOfDiff: {
-			selector: '#menu-item-3243 > a',
+			selector: '#menu-item-3242 > a',
 			text: 'Point Of Differentiation',
 		},
 		blog: {

@@ -62,7 +62,7 @@ describe('Load GBH Pages', () => {
 
 	it('Loads About us', () => {
 		goToAboutUs();
-		// cy.get(title.selector).should('have.text', title.titles.aboutUs.text);
+		cy.get(title.selector).should('have.text', title.titles.aboutUs);
 	});
 
 	it('Loads Point of Differentiation', () => {
