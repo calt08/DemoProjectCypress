@@ -16,13 +16,13 @@ import {
 import { title as aboutUsTitle } from '../mock-data/about-us';
 import { title, subtitle } from '../mock-data/common/pages-elements';
 
-describe('Load GBH Pages', () => {
+describe('Display GBH Pages', () => {
 	beforeEach(() => {
 		cy.clearLocalStorage();
 		cy.visit(Cypress.env('url'));
 	});
 
-	it('Loads Homepage', () => {
+	it('Display Home Page', () => {
 		// cy.get(title.selector).should('have.text', title.titles.Home);
 		cy.get(title.selector).should(($div) => {
 			// console.log($div.text());
@@ -30,42 +30,42 @@ describe('Load GBH Pages', () => {
 		});
 	});
 
-	it('Loads Innovation Squad', () => {
+	it('Display Innovation Squad Page', () => {
 		goToInnovationSquad();
 		cy.get(title.selector).should('have.text', title.titles.innovationSquad);
 	});
 
-	it('Loads IT Business Transformation', () => {
+	it('Display IT Business Transformation Page', () => {
 		goToITBusinessTransf();
 		cy.get(title.selector).should('have.text', title.titles.itBusinessTransf);
 	});
 
-	it('Loads Custom Software Development', () => {
+	it('Display Custom Software Development Page', () => {
 		goToCustomSoftDev();
 		cy.get(title.selector).should('have.text', title.titles.customSoftwareDev);
 	});
 
-	it('Loads Agent of Change Staff Augmentation', () => {
+	it('Display Agent of Change Staff Augmentation Page', () => {
 		goToAgentOfChange();
 		cy.get(title.selector).should('have.text', title.titles.agentOfChange);
 	});
 
-	it('Loads IT Fundation', () => {
+	it('Display IT Fundation Page', () => {
 		goToITFoundation();
 		cy.get(title.selector).should('have.text', title.titles.itFoundation);
 	});
 
-	it('Loads IT Protection', () => {
+	it('Display IT Protection Page', () => {
 		goToITProtection();
 		cy.get(title.selector).should('have.text', title.titles.itProtection);
 	});
 
-	it('Loads Compare products', () => {
+	it('Display Compare products Page', () => {
 		goToCompareProducts();
 		cy.get(title.selector).should('have.text', title.titles.compareProducts);
 	});
 
-	it('Loads IT Network Solutions', () => {
+	it('Display IT Network Solutions Page', () => {
 		goToITNetwork();
 		// cy.get(title.selector).should('have.text', title.titles.itNetwork);
 		cy.get(title.selector).should(($div) => {
@@ -74,12 +74,12 @@ describe('Load GBH Pages', () => {
 		});
 	});
 
-	it('Loads About us', () => {
+	it('Display About us Page', () => {
 		goToAboutUs();
 		cy.get(title.selector).should('have.text', title.titles.aboutUs);
 	});
 
-	it('Loads Point of Differentiation', () => {
+	it('Display Point of Differentiation Page', () => {
 		goToPointOfDiff();
 		cy.get(subtitle.selector).should(
 			'have.text',
@@ -87,17 +87,17 @@ describe('Load GBH Pages', () => {
 		);
 	});
 
-	it('Loads Blog', () => {
+	it('Display Blog Page', () => {
 		goToBlog();
 		cy.get(title.selector).should('have.text', title.titles.blog);
 	});
 
-	it('Loads Case Studies', () => {
+	it('Display Case Studies Page', () => {
 		goToCaseStudies();
 		cy.get(title.selector).should('have.text', title.titles.caseStudies);
 	});
 
-	it('Loads Careers', () => {
+	it('Display Careers Page', () => {
 		goToCareers();
 		cy.get(title.selector).should('have.text', title.titles.careers);
 	});
