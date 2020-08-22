@@ -80,3 +80,4 @@ export function changeLanguageToES() {
 	cy.get('.wpml-ls-link').eq(1).click();
 }
 
+
