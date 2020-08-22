@@ -1,5 +1,4 @@
 import { mainMenu } from '../mock-data/common/menu-elements';
-require('cypress-nhover');
 
 export function goToInnovationSquad() {
 	cy.get(mainMenu.solutions.selector).click();
@@ -79,5 +78,6 @@ export function changeLanguageToES() {
 	cy.get('.site-language-selector:first > a').click();
 	cy.get('.wpml-ls-link').eq(1).click();
 }
+
 
 

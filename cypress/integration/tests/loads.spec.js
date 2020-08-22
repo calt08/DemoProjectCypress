@@ -12,8 +12,7 @@ import {
 	goToCareers,
 	goToCaseStudies,
 	goToITProtection,
-} from '../actions/go-to-actions';
-import { title as aboutUsTitle } from '../mock-data/about-us';
+} from '../actions/menu-actions';
 import { title, subtitle } from '../mock-data/common/pages-elements';
 
 describe('Display GBH Pages', () => {
@@ -67,9 +66,7 @@ describe('Display GBH Pages', () => {
 
 	it('Display IT Network Solutions Page', () => {
 		goToITNetwork();
-		// cy.get(title.selector).should('have.text', title.titles.itNetwork);
 		cy.get(title.selector).should(($div) => {
-			// console.log($div.text());
 			expect($div.text().trim()).equal(title.titles.itNetwork);
 		});
 	});
