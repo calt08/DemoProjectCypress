@@ -15,6 +15,21 @@ import {
 } from '../actions/menu-actions';
 import { title, subtitle } from '../mock-data/common/pages-elements';
 
+import { checkTitleHomePage } from '../actions/Pages/home-actions';
+import { checkTitleInnovationSquad } from '../actions/Pages/innovation-squad-actions';
+import { checkTitleITBussinessTransf } from '../actions/Pages/it-bussiness-actions';
+import { checkTitleCustomSoftwareDev } from '../actions/Pages/custom-software-actions';
+import { checkTitleAgentOfChange } from '../actions/Pages/agent-of-change-actions';
+import { checkTitleITFoundation } from '../actions/Pages/it-foundation-actions';
+import { checkTitleITProtection } from '../actions/Pages/it-protection-actions';
+import { checkTitleCompareProducts } from '../actions/Pages/compare-products-actions';
+import { checkTitleITNetwork } from '../actions/Pages/it-network-actions';
+import { checkTitlePointOfDiff } from '../actions/Pages/point-of-diff-actions';
+import { checkTitleAboutUs } from '../actions/Pages/about-us-actions';
+import { checkTitleBlog } from '../actions/Pages/blog-actions';
+import { checkTitleCaseStudies } from '../actions/Pages/case-studies-actions';
+import { checkTitleCareers } from '../actions/Pages/careers-actions';
+
 describe('Display GBH Pages', () => {
 	beforeEach(() => {
 		cy.clearLocalStorage();
@@ -22,80 +37,74 @@ describe('Display GBH Pages', () => {
 	});
 
 	it('Display Home Page', () => {
-		// cy.get(title.selector).should('have.text', title.titles.Home);
-		cy.get(title.selector).should(($div) => {
-			// console.log($div.text());
-			expect($div.text().trim()).equal(title.titles.Home);
-		});
+		checkTitleHomePage();
 	});
 
 	it('Display Innovation Squad Page', () => {
 		goToInnovationSquad();
-		cy.get(title.selector).should('have.text', title.titles.innovationSquad);
+		checkTitleInnovationSquad();
 	});
 
 	it('Display IT Business Transformation Page', () => {
 		goToITBusinessTransf();
-		cy.get(title.selector).should('have.text', title.titles.itBusinessTransf);
+		checkTitleITBussinessTransf();
 	});
 
 	it('Display Custom Software Development Page', () => {
 		goToCustomSoftDev();
-		cy.get(title.selector).should('have.text', title.titles.customSoftwareDev);
+		checkTitleCustomSoftwareDev();
 	});
 
 	it('Display Agent of Change Staff Augmentation Page', () => {
 		goToAgentOfChange();
-		cy.get(title.selector).should('have.text', title.titles.agentOfChange);
+		checkTitleAgentOfChange();
 	});
 
-	it('Display IT Fundation Page', () => {
+	it('Display IT Foundation Page', () => {
 		goToITFoundation();
-		cy.get(title.selector).should('have.text', title.titles.itFoundation);
+		checkTitleITFoundation();
 	});
 
 	it('Display IT Protection Page', () => {
 		goToITProtection();
-		cy.get(title.selector).should('have.text', title.titles.itProtection);
+		checkTitleITProtection();
 	});
 
 	it('Display Compare products Page', () => {
 		goToCompareProducts();
-		cy.get(title.selector).should('have.text', title.titles.compareProducts);
+		checkTitleCompareProducts();
 	});
 
 	it('Display IT Network Solutions Page', () => {
 		goToITNetwork();
-		cy.get(title.selector).should(($div) => {
-			expect($div.text().trim()).equal(title.titles.itNetwork);
-		});
+		checkTitleITNetwork();
 	});
 
 	it('Display About us Page', () => {
 		goToAboutUs();
-		cy.get(title.selector).should('have.text', title.titles.aboutUs);
+		checkTitleAboutUs();
 	});
 
 	it('Display Point of Differentiation Page', () => {
 		goToPointOfDiff();
-		cy.get(subtitle.selector).should(
-			'have.text',
-			subtitle.subtitles.pointOfDiff
-		);
+		checkTitlePointOfDiff();
 	});
 
 	it('Display Blog Page', () => {
 		goToBlog();
-		cy.get(title.selector).should('have.text', title.titles.blog);
+		checkTitleBlog();
 	});
 
 	it('Display Case Studies Page', () => {
 		goToCaseStudies();
-		cy.get(title.selector).should('have.text', title.titles.caseStudies);
+		checkTitleCaseStudies();
 	});
 
 	it('Display Careers Page', () => {
 		goToCareers();
-		cy.get(title.selector).should('have.text', title.titles.careers);
+		checkTitleCareers();
 	});
 });
+
+
+
