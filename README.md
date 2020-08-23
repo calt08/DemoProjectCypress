@@ -10,7 +10,7 @@ Yet To Do:
 First review:
 - [x] remove commented code
 - [x] Fix the bracket problem on force:true
-- [x] 2 empty lines at the end of each file
+- [ ] 2 empty lines at the end of each file
 - [x] Each check is in a different file on actions
 - [ ] Fix indentation
 

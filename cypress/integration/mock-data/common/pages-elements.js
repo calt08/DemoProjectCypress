@@ -32,5 +32,3 @@ export const subtitle = {
 };
 
 
-
-// end
