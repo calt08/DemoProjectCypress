@@ -13,7 +13,6 @@ import {
 	goToCaseStudies,
 	goToITProtection,
 } from '../actions/menu-actions';
-import { title, subtitle } from '../mock-data/common/pages-elements';
 
 import { checkTitleHomePage } from '../actions/Pages/home-actions';
 import { checkTitleInnovationSquad } from '../actions/Pages/innovation-squad-actions';
@@ -108,3 +107,4 @@ describe('Display GBH Pages', () => {
 
 
 
+// end
