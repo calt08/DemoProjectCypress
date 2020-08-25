@@ -1,4 +1,4 @@
-import { mainMenu } from '../mock-data/common/menu-elements';
+import { mainMenu } from '../../mock-data/common/menu-elements';
 
 export function goToInnovationSquad() {
   cy.get(mainMenu.solutions.selector).click();

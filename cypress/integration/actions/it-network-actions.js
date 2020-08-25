@@ -1,6 +1,6 @@
-import { title } from '../../mock-data/home-elements';
+import { title } from '../mock-data/it-network-elements';
 
-export function checkTitleHomePage() {
+export function checkTitleITNetwork() {
   cy.get(title.selector).should(($div) => {
     expect($div.text().trim()).equal(title.text);
   });

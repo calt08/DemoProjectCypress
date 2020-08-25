@@ -12,22 +12,22 @@ import {
   goToCareers,
   goToCaseStudies,
   goToITProtection,
-} from '../actions/menu-actions';
+} from '../actions/common/menu-actions';
 
-import { checkTitleHomePage } from '../actions/Pages/home-actions';
-import { checkTitleInnovationSquad } from '../actions/Pages/innovation-squad-actions';
-import { checkTitleITBussinessTransf } from '../actions/Pages/it-bussiness-actions';
-import { checkTitleCustomSoftwareDev } from '../actions/Pages/custom-software-actions';
-import { checkTitleAgentOfChange } from '../actions/Pages/agent-of-change-actions';
-import { checkTitleITFoundation } from '../actions/Pages/it-foundation-actions';
-import { checkTitleITProtection } from '../actions/Pages/it-protection-actions';
-import { checkTitleCompareProducts } from '../actions/Pages/compare-products-actions';
-import { checkTitleITNetwork } from '../actions/Pages/it-network-actions';
-import { checkTitlePointOfDiff } from '../actions/Pages/point-of-diff-actions';
-import { checkTitleAboutUs } from '../actions/Pages/about-us-actions';
-import { checkTitleBlog } from '../actions/Pages/blog-actions';
-import { checkTitleCaseStudies } from '../actions/Pages/case-studies-actions';
-import { checkTitleCareers } from '../actions/Pages/careers-actions';
+import { checkTitleHomePage } from '../actions/home-actions';
+import { checkTitleInnovationSquad } from '../actions/innovation-squad-actions';
+import { checkTitleITBussinessTransf } from '../actions/it-bussiness-actions';
+import { checkTitleCustomSoftwareDev } from '../actions/custom-software-actions';
+import { checkTitleAgentOfChange } from '../actions/agent-of-change-actions';
+import { checkTitleITFoundation } from '../actions/it-foundation-actions';
+import { checkTitleITProtection } from '../actions/it-protection-actions';
+import { checkTitleCompareProducts } from '../actions/compare-products-actions';
+import { checkTitleITNetwork } from '../actions/it-network-actions';
+import { checkTitlePointOfDiff } from '../actions/point-of-diff-actions';
+import { checkTitleAboutUs } from '../actions/about-us-actions';
+import { checkTitleBlog } from '../actions/blog-actions';
+import { checkTitleCaseStudies } from '../actions/case-studies-actions';
+import { checkTitleCareers } from '../actions/careers-actions';
 
 describe('Display GBH Pages', () => {
   beforeEach(() => {
