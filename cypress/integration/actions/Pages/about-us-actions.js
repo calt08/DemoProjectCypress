@@ -4,5 +4,3 @@ export const checkTitleAboutUs = () => {
   cy.get(title.selector).should('have.text', title.titles.aboutUs);
 }
 
-
-

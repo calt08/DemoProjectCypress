@@ -5,5 +5,3 @@ export const checkTitlePointOfDiff = () => {
     .should('have.text', subtitle.subtitles.pointOfDiff);
 }
 
-
-

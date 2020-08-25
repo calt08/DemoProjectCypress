@@ -14,8 +14,8 @@ First review:
 - [x] Fix indentation
 
 First real review:
-- [ ] Just 2 trailing lines on each file
+- [x] Just 2 trailing lines on each file
 - [ ] Use functions instead of constants
-- [ ] Eliminate unnecesary space on files
+- [x] Eliminate unnecesary space on files
 - [ ] Create a file on mockdata for each page
-- [ ] Fix tabulation on Package.json 
+- [x] Fix tabulation on Package.json 

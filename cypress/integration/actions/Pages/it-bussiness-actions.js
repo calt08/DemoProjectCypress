@@ -4,6 +4,3 @@ export const checkTitleITBussinessTransf = () => {
   cy.get(title.selector).should('have.text', title.titles.itBusinessTransf);
 }
 
-
-
-
