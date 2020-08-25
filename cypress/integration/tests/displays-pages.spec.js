@@ -14,7 +14,7 @@ import {
   goToITProtection,
 } from '../actions/common/menu-actions';
 
-import { checkTitleHomePage } from '../actions/home-actions';
+import { checkHomePage } from '../actions/home-actions';
 import { checkTitleInnovationSquad } from '../actions/innovation-squad-actions';
 import { checkTitleITBussinessTransf } from '../actions/it-bussiness-actions';
 import { checkTitleCustomSoftwareDev } from '../actions/custom-software-actions';
@@ -36,7 +36,7 @@ describe('Display GBH Pages', () => {
   });
 
   it('Display Home Page', () => {
-    checkTitleHomePage();
+    checkHomePage();
   });
 
   it('Display Innovation Squad Page', () => {

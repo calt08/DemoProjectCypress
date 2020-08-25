@@ -4,3 +4,7 @@ export const title = {
     'You’re moving fast. We’ve got a board-level vCIO to get you there faster.'
 };
 
+export const setUpIntroCallButton = {
+  selector: '.service-best__button > a'
+}
+
