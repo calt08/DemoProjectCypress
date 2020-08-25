@@ -1,6 +1,6 @@
-import { title, subtitle } from '../../mock-data/common/pages-elements';
+import { title } from '../../mock-data/case-studies-elements';
 
-export const checkTitleCaseStudies = () => {
-  cy.get(title.selector).should('have.text', title.titles.caseStudies);
+export function checkTitleCaseStudies() {
+  cy.get(title.selector).should('have.text', title.text);
 }
 

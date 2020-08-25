@@ -1,6 +1,6 @@
-import { title, subtitle } from '../../mock-data/common/pages-elements';
+import { title } from '../../mock-data/careers-elements';
 
-export const checkTitleCareers = () => {
-  cy.get(title.selector).should('have.text', title.titles.careers);
+export function checkTitleCareers() {
+  cy.get(title.selector).should('have.text', title.text);
 }
 

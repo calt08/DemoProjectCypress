@@ -1,6 +1,6 @@
-import { title, subtitle } from '../../mock-data/common/pages-elements';
+import { title } from '../../mock-data/it-protection-elements';
 
-export const checkTitleITProtection = () => {
-  cy.get(title.selector).should('have.text', title.titles.itProtection);
+export function checkTitleITProtection() {
+  cy.get(title.selector).should('have.text', title.text);
 }
 

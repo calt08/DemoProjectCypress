@@ -1,6 +1,6 @@
-import { title, subtitle } from '../../mock-data/common/pages-elements';
+import { title } from '../../mock-data/agent-of-change-elements';
 
-export const checkTitleAgentOfChange = () => {
-  cy.get(title.selector).should('have.text', title.titles.agentOfChange);
+export function checkTitleAgentOfChange() {
+  cy.get(title.selector).should('have.text', title.text);
 }
 

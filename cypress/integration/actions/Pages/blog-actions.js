@@ -1,6 +1,6 @@
-import { title, subtitle } from '../../mock-data/common/pages-elements';
+import { title } from '../../mock-data/blog-elements';
 
-export const checkTitleBlog = () => {
-  cy.get(title.selector).should('have.text', title.titles.blog);
+export function checkTitleBlog() {
+  cy.get(title.selector).should('have.text', title.text);
 }
 

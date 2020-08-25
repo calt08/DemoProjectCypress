@@ -1,6 +1,6 @@
-import { title, subtitle } from '../../mock-data/common/pages-elements';
+import { title } from '../../mock-data/compare-products-elements';
 
-export const checkTitleCompareProducts = () => {
-  cy.get(title.selector).should('have.text', title.titles.compareProducts);
+export function checkTitleCompareProducts() {
+  cy.get(title.selector).should('have.text', title.text);
 }
 

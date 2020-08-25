@@ -1,6 +1,6 @@
-import { title, subtitle } from '../../mock-data/common/pages-elements';
+import { title } from '../../mock-data/it-bussiness-elements';
 
-export const checkTitleITBussinessTransf = () => {
-  cy.get(title.selector).should('have.text', title.titles.itBusinessTransf);
+export function checkTitleITBussinessTransf() {
+  cy.get(title.selector).should('have.text', title.text);
 }
 

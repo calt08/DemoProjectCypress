@@ -1,7 +1,7 @@
-import { title, subtitle } from '../../mock-data/common/pages-elements';
+import { subtitle } from '../../mock-data/point-of-diff-elements';
 
-export const checkTitlePointOfDiff = () => {
+export function checkTitlePointOfDiff() {
   cy.get(subtitle.selector)
-    .should('have.text', subtitle.subtitles.pointOfDiff);
+    .should('have.text', subtitle.text);
 }
 
