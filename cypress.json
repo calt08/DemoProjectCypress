@@ -2,6 +2,6 @@
   "defaultCommandTimeout": 10000,
   "chromeWebSecurity": false,
   "env": {
-    "url": "https://gbh.com.do/"
+    "url": "https://gbh.com.do"
   }
 }

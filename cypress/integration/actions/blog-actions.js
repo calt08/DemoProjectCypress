@@ -1,6 +1,8 @@
 import { title } from '../mock-data/blog-elements';
 
-export function checkTitleBlog() {
-  cy.get(title.selector).should('have.text', title.text);
+export function checkBlogPage() {
+  cy.get(title.selector).should('have.text', title.text)
+    .url().should('eq', `${Cypress.env('url')}/blog/`)
+    .title().should('eq', 'Blog');
 }
 

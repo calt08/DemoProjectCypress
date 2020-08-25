@@ -21,5 +21,5 @@ First real review:
 - [x] Fix tabulation on Package.json 
 
 Cypress Demo Project Phase 2
-- [ ] Check url and title of each page
-- [ ] console.log() the Color of a Button
+- [x] Check url and title of each page
+- [x] console.log() the Color of a Button

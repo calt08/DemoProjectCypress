@@ -1,6 +1,8 @@
 import { title } from '../mock-data/agent-of-change-elements';
 
-export function checkTitleAgentOfChange() {
-  cy.get(title.selector).should('have.text', title.text);
+export function checkAgentOfChangePage() {
+  cy.get(title.selector).should('have.text', title.text)
+    .url().should('eq', `${Cypress.env('url')}/staff-augmentation/`)
+    .title().should('eq', 'Staff Augmentation');
 }
 

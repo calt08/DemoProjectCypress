@@ -1,6 +1,8 @@
 import { title } from '../mock-data/it-foundation-elements';
 
-export function checkTitleITFoundation() {
-  cy.get(title.selector).should('have.text', title.text);
+export function checkITFoundationPage() {
+  cy.get(title.selector).should('have.text', title.text)
+    .url().should('eq', `${Cypress.env('url')}/it-essentials/`)
+    .title().should('eq', 'IT Essentials');
 }
 
