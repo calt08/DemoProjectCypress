@@ -15,7 +15,7 @@ First review:
 
 First real review:
 - [x] Just 2 trailing lines on each file
-- [ ] Use functions instead of constants
+- [x] Use functions instead of constants
 - [x] Eliminate unnecesary space on files
-- [ ] Create a file on mockdata for each page
+- [x] Create a file on mockdata for each page
 - [x] Fix tabulation on Package.json 
