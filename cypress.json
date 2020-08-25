@@ -1,7 +1,7 @@
 {
-	"defaultCommandTimeout": 10000,
-	"chromeWebSecurity": false,
-	"env": {
-		"url": "https://gbh.com.do/"
-	}
+  "defaultCommandTimeout": 10000,
+  "chromeWebSecurity": false,
+  "env": {
+    "url": "https://gbh.com.do/"
+  }
 }
