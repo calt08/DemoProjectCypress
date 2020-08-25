@@ -4,7 +4,6 @@ export function goToInnovationSquad() {
   cy.get(mainMenu.solutions.selector).click();
   cy.get(mainMenu.solutions.inside.innovationSquad.selector)
     .click({ force: true, });
-
 }
 
 export function goToITBusinessTransf() {
