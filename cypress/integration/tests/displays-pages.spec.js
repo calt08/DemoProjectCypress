@@ -14,20 +14,20 @@ import {
   goToITProtection,
 } from '../actions/common/menu-actions';
 
-import { checkTitleHomePage } from '../actions/home-actions';
-import { checkTitleInnovationSquad } from '../actions/innovation-squad-actions';
-import { checkTitleITBussinessTransf } from '../actions/it-bussiness-actions';
-import { checkTitleCustomSoftwareDev } from '../actions/custom-software-actions';
-import { checkTitleAgentOfChange } from '../actions/agent-of-change-actions';
-import { checkTitleITFoundation } from '../actions/it-foundation-actions';
-import { checkTitleITProtection } from '../actions/it-protection-actions';
-import { checkTitleCompareProducts } from '../actions/compare-products-actions';
-import { checkTitleITNetwork } from '../actions/it-network-actions';
-import { checkTitlePointOfDiff } from '../actions/point-of-diff-actions';
-import { checkTitleAboutUs } from '../actions/about-us-actions';
-import { checkTitleBlog } from '../actions/blog-actions';
-import { checkTitleCaseStudies } from '../actions/case-studies-actions';
-import { checkTitleCareers } from '../actions/careers-actions';
+import { checkHomePage } from '../actions/home-actions';
+import { checkInnovationSquadPage } from '../actions/innovation-squad-actions';
+import { checkITBussinessTransfPage, colorOfButton } from '../actions/it-bussiness-actions';
+import { checkCustomSoftwareDevPage } from '../actions/custom-software-actions';
+import { checkAgentOfChangePage } from '../actions/agent-of-change-actions';
+import { checkITFoundationPage } from '../actions/it-foundation-actions';
+import { checkITProtectionPage } from '../actions/it-protection-actions';
+import { checkCompareProductsPage } from '../actions/compare-products-actions';
+import { checkITNetworkPage } from '../actions/it-network-actions';
+import { checkPointOfDiffPage } from '../actions/point-of-diff-actions';
+import { checkAboutUsPage } from '../actions/about-us-actions';
+import { checkBlogPage } from '../actions/blog-actions';
+import { checkCaseStudiesPage } from '../actions/case-studies-actions';
+import { checkCareersPage } from '../actions/careers-actions';
 
 describe('Display GBH Pages', () => {
   beforeEach(() => {
@@ -36,72 +36,73 @@ describe('Display GBH Pages', () => {
   });
 
   it('Display Home Page', () => {
-    checkTitleHomePage();
+    checkHomePage();
   });
 
   it('Display Innovation Squad Page', () => {
     goToInnovationSquad();
-    checkTitleInnovationSquad();
+    checkInnovationSquadPage();
   });
 
   it('Display IT Business Transformation Page', () => {
     goToITBusinessTransf();
-    checkTitleITBussinessTransf();
+    checkITBussinessTransfPage();
+    colorOfButton();
   });
 
   it('Display Custom Software Development Page', () => {
     goToCustomSoftDev();
-    checkTitleCustomSoftwareDev();
+    checkCustomSoftwareDevPage();
   });
 
   it('Display Agent of Change Staff Augmentation Page', () => {
     goToAgentOfChange();
-    checkTitleAgentOfChange();
+    checkAgentOfChangePage();
   });
 
   it('Display IT Foundation Page', () => {
     goToITFoundation();
-    checkTitleITFoundation();
+    checkITFoundationPage();
   });
 
   it('Display IT Protection Page', () => {
     goToITProtection();
-    checkTitleITProtection();
+    checkITProtectionPage();
   });
 
   it('Display Compare products Page', () => {
     goToCompareProducts();
-    checkTitleCompareProducts();
+    checkCompareProductsPage();
   });
 
   it('Display IT Network Solutions Page', () => {
     goToITNetwork();
-    checkTitleITNetwork();
+    checkITNetworkPage();
   });
 
   it('Display About us Page', () => {
     goToAboutUs();
-    checkTitleAboutUs();
+    checkAboutUsPage();
   });
 
   it('Display Point of Differentiation Page', () => {
     goToPointOfDiff();
-    checkTitlePointOfDiff();
+    checkPointOfDiffPage();
   });
 
   it('Display Blog Page', () => {
     goToBlog();
-    checkTitleBlog();
+    checkBlogPage();
   });
 
   it('Display Case Studies Page', () => {
     goToCaseStudies();
-    checkTitleCaseStudies();
+    checkCaseStudiesPage();
   });
 
   it('Display Careers Page', () => {
     goToCareers();
-    checkTitleCareers();
+    checkCareersPage();
   });
 });
 
