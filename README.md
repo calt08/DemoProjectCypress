@@ -23,3 +23,7 @@ First real review:
 Cypress Demo Project Phase 2
 - [x] Check url and title of each page
 - [x] console.log() the Color of a Button
+
+Cypress Demo Project Phase 3
+- [ ] Add a new test case that fills(Without sending) the contact form from "Point Of Differentiation" page
+ 
