@@ -23,13 +23,13 @@ import { checkITFoundationPage } from '../actions/it-foundation-actions';
 import { checkITProtectionPage } from '../actions/it-protection-actions';
 import { checkCompareProductsPage } from '../actions/compare-products-actions';
 import { checkITNetworkPage } from '../actions/it-network-actions';
-import { checkPointOfDiffPage } from '../actions/point-of-diff-actions';
+import { checkPointOfDiffPage, fillContactForm } from '../actions/point-of-diff-actions';
 import { checkAboutUsPage } from '../actions/about-us-actions';
 import { checkBlogPage } from '../actions/blog-actions';
 import { checkCaseStudiesPage } from '../actions/case-studies-actions';
 import { checkCareersPage } from '../actions/careers-actions';
 
-describe('Display GBH Pages', () => {
+describe('Test cases GBH Pages', () => {
   beforeEach(() => {
     cy.clearLocalStorage();
     cy.visit(Cypress.env('url'));
@@ -103,6 +103,11 @@ describe('Display GBH Pages', () => {
   it('Display Careers Page', () => {
     goToCareers();
     checkCareersPage();
+  });
+
+  it('Fills Contact form from Point of Diff', () => {
+    goToPointOfDiff();
+    fillContactForm();
   });
 });
 
