@@ -23,7 +23,7 @@ import { checkITFoundationPage } from '../actions/it-foundation-actions';
 import { checkITProtectionPage } from '../actions/it-protection-actions';
 import { checkCompareProductsPage } from '../actions/compare-products-actions';
 import { checkITNetworkPage } from '../actions/it-network-actions';
-import { checkPointOfDiffPage, fillContactForm } from '../actions/point-of-diff-actions';
+import { checkPointOfDiffPage } from '../actions/point-of-diff-actions';
 import { checkAboutUsPage } from '../actions/about-us-actions';
 import { checkBlogPage } from '../actions/blog-actions';
 import { checkCaseStudiesPage } from '../actions/case-studies-actions';
