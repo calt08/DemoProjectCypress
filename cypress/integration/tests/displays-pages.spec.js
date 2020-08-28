@@ -29,7 +29,7 @@ import { checkBlogPage } from '../actions/blog-actions';
 import { checkCaseStudiesPage } from '../actions/case-studies-actions';
 import { checkCareersPage } from '../actions/careers-actions';
 
-describe('Test cases GBH Pages', () => {
+describe('Display GBH Pages', () => {
   beforeEach(() => {
     cy.clearLocalStorage();
     cy.visit(Cypress.env('url'));
@@ -103,11 +103,6 @@ describe('Test cases GBH Pages', () => {
   it('Display Careers Page', () => {
     goToCareers();
     checkCareersPage();
-  });
-
-  it('Fills Contact form from Point of Diff', () => {
-    goToPointOfDiff();
-    fillContactForm();
   });
 });
 
