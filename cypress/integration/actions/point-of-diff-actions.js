@@ -7,20 +7,14 @@ export function checkPointOfDiffPage() {
     .title().should('eq', pageTitle.text);
 }
 
+function fillInput(input) {
+  cy.get(input.selector).type(input.text)
+    .should('have.value', input.text);
+}
+
 export function fillContactForm() {
-  cy.get(contactForm.name.selector).type(contactForm.name.text)
-    .should('have.value', contactForm.name.text);
-  cy.get(contactForm.title.selector).type(contactForm.title.text)
-    .should('have.value', contactForm.title.text);
-  cy.get(contactForm.email.selector).type(contactForm.email.text)
-    .should('have.value', contactForm.email.text);
-  cy.get(contactForm.phone.selector).type(contactForm.phone.text)
-    .should('have.value', contactForm.phone.text);
-  cy.get(contactForm.company.selector).type(contactForm.company.text)
-    .should('have.value', contactForm.company.text);
-  cy.get(contactForm.industry.selector).type(contactForm.industry.text)
-    .should('have.value', contactForm.industry.text);
-  cy.get(contactForm.comment.selector).type(contactForm.comment.text)
-    .should('have.value', contactForm.comment.text);
+  for(var key of Object.keys(contactForm)){
+    fillInput(contactForm[key]);
+  }
 }
 
