@@ -26,4 +26,6 @@ Cypress Demo Project Phase 2
 
 Cypress Demo Project Phase 3
 - [x] Add a new test case that fills(Without sending) the contact form from "Point Of Differentiation" page
+
+- [ ] Optimize fill form function
  
